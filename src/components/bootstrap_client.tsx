@@ -2,9 +2,11 @@
 
 import { useEffect } from "react";
 
+const bootstrap = () => import("bootstrap/dist/js/bootstrap.bundle.min.js");
+
 export default function BootstrapClient() {
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    bootstrap();
   }, []);
 
   return null;
