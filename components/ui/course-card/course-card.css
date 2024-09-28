@@ -1,0 +1,27 @@
+:host {
+    display: block;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: var(--card-bg, #fff);
+    color: var(--card-color, #212529);
+    border: 1px solid var(--card-border-color, rgba(0,0,0,.125));
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
