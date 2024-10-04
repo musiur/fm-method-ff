@@ -2,12 +2,25 @@
 
 /* colors in css variables */
 :root {
-    --primary-color: background: #4f419a;
+    --primary-color: #4f419a;
     --secondary-color: #6b7280;
     --accent-color: #ec008c;
     --background-color-white: #f9fafb;
     --background-color-black: #001622;
     --text-color: #1f2937;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+}
+.btn-outline-primary {
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
 }
 
 .hind-siliguri-light {
@@ -44,11 +57,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: var(--background-color-white);
-    color: var(--text-color);
     font-family: "Hind Siliguri", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -57,4 +65,97 @@ body {
 .brand-logo {
     width: 80px;
     height: auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-sm {
+    padding: 10px !important;
+}
+
+.col {
+    padding: 0 !important;
+}
+
+.custom-section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
+/* home page */
+.home-hero-section-inner-container {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .home-hero-section-inner-container {
+        background-image: url("./assets/sir-one.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.home-hero-from {
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .home-hero-from {
+        width: 400px;
+        max-width: 400px;
+    }
+}
+
+h1 {
+    font-size: clamp(1rem, 3rem, 4rem) !important;
+}
+
+/* slides */
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #001622;
+    border-radius: 12px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 0 0;
+    padding: 4px;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+.swiper-pagination-bullet {
+    opacity: 70% !important;
+}
+
+.swiper-pagination-bullet-active {
+    transition: 0.3s ease-in-out;
+    width: 2rem !important;
+    border-radius: 4px !important;
+    opacity: 100% !important;
 }
