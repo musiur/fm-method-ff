@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+/* colors in css variables */
+:root {
+    --primary-color: background: #4f419a;
+    --secondary-color: #6b7280;
+    --accent-color: #ec008c;
+    --background-color-white: #f9fafb;
+    --background-color-black: #001622;
+    --text-color: #1f2937;
+}
+
+.hind-siliguri-light {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-siliguri-regular {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hind-siliguri-medium {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hind-siliguri-semibold {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hind-siliguri-bold {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color-white);
+    color: var(--text-color);
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.brand-logo {
+    width: 80px;
+    height: auto;
+}
