@@ -92,4 +92,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   );
+
+  // 7. Load New Courses Section
+  loadComponent("components/home/new-courses.html", "new-courses-slot", function () {
+    console.log("Courses section loaded successfully.");
+    new Swiper(".new-courses.container", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination-new-courses",
+        clickable: true,
+      },
+      breakpoints: {
+        576: { slidesPerView: 2, spaceBetween: 5 },
+        1024: { slidesPerView: 3, spaceBetween: 10 },
+        1200: { slidesPerView: 4, spaceBetween: 10 },
+      },
+    });
+  });
+
+  // 7. Load Testimonial Section
+  loadComponent("components/home/testimonial.html", "testimonial-slot", function () {
+    console.log("Courses section loaded successfully.");
+    new Swiper(".testimonial.container", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination-testimonial",
+        clickable: true,
+      },
+      breakpoints: {
+        576: { slidesPerView: 2, spaceBetween: 10 },
+        1024: { slidesPerView: 3, spaceBetween: 30 },
+      },
+    });
+  });
 });

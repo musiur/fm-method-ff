@@ -123,7 +123,6 @@ h1 {
 }
 
 .swiper-slide {
-    text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
@@ -153,6 +152,11 @@ h1 {
     .swiper-pagination-bullet-active {
         background-color: white !important;
     }
+}
+
+.online-courses p,
+h4 {
+    text-align: start !important;
 }
 
 .course-mini-card {
