@@ -127,4 +127,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+
+  // 1. Load Footer
+  loadComponent("components/footer.html", "footer-slot", function () {
+    console.log("Footer loaded successfully.");
+  });
 });
